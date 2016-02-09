@@ -91,9 +91,9 @@ render: () -> """
 
 update: (output, domEl) ->
     time = output.split(',')
-    hours = time[0]
-    minutes = time[1]
-    seconds = time[2]
+    hours = parseInt time[0]
+    minutes = parseInt time[1]
+    seconds = parseInt time[2]
     sepDig = (num, pos) ->
         stringNum = num.toString()
         newInt = stringNum.charAt pos
