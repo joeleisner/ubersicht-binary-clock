@@ -123,7 +123,7 @@ update: (output, domEl) ->
     fillDots = (el, num) ->
         if num is 0
             el.find('.dot').removeClass 'fill'
-        if num is 1
+        else if num is 1
             el.find('.row').not('.row-4').find('.dot').removeClass 'fill'
             el.find('.row-4').find('.dot').addClass 'fill'
         else if num is 2
