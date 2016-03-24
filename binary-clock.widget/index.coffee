@@ -166,13 +166,12 @@ update: (output, domEl) ->
 
 # Basic Style to center output
 style: """
+    top:15px;
+    left:15px;
     * {
         box-sizing:border-box;
     }
     .container {
-        position:absolute;
-        top:15px;
-        left:15px;
         width:240px;
         height:160px;
     }
